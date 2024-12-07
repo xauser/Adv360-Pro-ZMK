@@ -48,8 +48,8 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp N1         &kp N2     &kp N3        &kp N4        &kp N5  &kp CAPSLOCK                                                                      &kp PRINTSCREEN  &kp N6  &kp N7         &kp N8         &kp N9     &kp N0     &kp MINUS
-&kp TAB           &kp Q          &kp W      &kp E         &kp R         &kp T   &kp C_PLAY                                                                        &kp C_MUTE       &kp Y   &kp U          &kp I          &kp O      &kp P      &kp BSLH
+&kp EQUAL         &kp N1         &kp N2     &kp N3        &kp N4        &kp N5  &kp C_PLAY                                                                        &kp C_MUTE       &kp N6  &kp N7         &kp N8         &kp N9     &kp N0     &kp MINUS
+&kp TAB           &kp Q          &kp W      &kp E         &kp R         &kp T   &kp LA(TAB)                                                                       &kp LA(LS(TAB))  &kp Y   &kp U          &kp I          &kp O      &kp P      &kp BSLH
 &lt 2 ESC         &kp A          &kp S      &kp D         &kp F         &kp G   &kp LC(LG(J))     &kp C_PREVIOUS  &kp C_NEXT             &kp LEFT      &kp RIGHT  &kp LC(LG(K))    &kp H   &kp J          &kp K          &kp L      &kp SEMI   &kp SQT
 &kp LSHFT         &kp Z          &kp X      &kp C         &kp V         &kp B                                     &kp C_VOLUME_UP        &kp UP_ARROW                              &kp N   &kp M          &kp COMMA      &kp DOT    &kp FSLH   &kp RSHFT
 &kp LEFT_CONTROL  &kp PAGE_DOWN  &kp PG_UP  &kp LEFT_ALT  &kp LEFT_GUI          &ltr 1 BACKSPACE  &kp DELETE      &kp C_VOLUME_DOWN      &kp DOWN      &kp ENTER  &ltr 1 SPACE             &kp RIGHT_GUI  &kp RIGHT_ALT  &kp PG_DN  &kp PG_UP  &kp RIGHT_CONTROL
@@ -60,7 +60,7 @@
             bindings = <
 &kp TILDE     &kp F1         &kp F2       &kp F3      &kp F4                &kp F5                 &kp F11                                              &kp F12             &kp F6        &kp F7     &kp F8        &kp F9      &kp F10         &none
 &trans        &kp RA(Q)      &kp RA(Y)    &kp RA(P)   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PRINTSCREEN                                      &kp K_CONTEXT_MENU  &kp AT_SIGN   &kp HOME   &kp INSERT    &kp DELETE  &kp END         &none
-&kp CAPSLOCK  &kp RA(M)      &kp RA(S)    &kp RA(N5)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &trans  &trans      &trans  &trans  &none               &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT   &kp DOLLAR      &trans
+&kp CAPSLOCK  &kp RA(M)      &kp RA(S)    &kp RA(N5)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CAPSLOCK     &trans  &trans      &trans  &trans  &kp PAUSE_BREAK     &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT   &kp DOLLAR      &trans
 &trans        &kp AMPERSAND  &kp PERCENT  &kp HASH    &kp LEFT_BRACKET      &kp RIGHT_BRACKET                               &trans      &trans                              &kp ASTERISK  &kp MINUS  &kp PLUS      &kp EQUAL   &kp UNDERSCORE  &trans
 &trans        &trans         &trans       &trans      &trans                                       &trans           &trans  &trans      &trans  &trans  &trans                            &trans     &trans        &trans      &trans          &trans
             >;
