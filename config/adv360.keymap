@@ -17,6 +17,8 @@
             bindings = <&kp RET>;
         };
 
+        #endif
+
         lm: lm {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
@@ -34,8 +36,6 @@
             label = "LM";
             wait-ms = <0>;
         };
-
-        #endif
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
