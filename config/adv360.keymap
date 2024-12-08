@@ -24,17 +24,18 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <2>;
-            bindings
-                = <&macro_param_1to1>
-                , <&macro_press &mo MACRO_PLACEHOLDER>
-                , <&macro_param_2to1>
-                , <&macro_press &kp MACRO_PLACEHOLDER>
-                , <&macro_pause_for_release>
-                , <&macro_param_2to1>
-                , <&macro_release &kp MACRO_PLACEHOLDER>
-                , <&macro_param_1to1>
-                , <&macro_release &mo MACRO_PLACEHOLDER>
-                ;
+            bindings =
+                <&macro_param_1to1>,
+                <&macro_press>,
+                <&mo MACRO_PLACEHOLDER &macro_param_2to1>,
+                <&macro_press>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_param_2to1>,
+                <&macro_release>,
+                <&kp MACRO_PLACEHOLDER &macro_param_1to1>,
+                <&macro_release>,
+                <&mo MACRO_PLACEHOLDER>;
         };
 
         hm: homerow_mods {
@@ -77,7 +78,7 @@
         fn {
             bindings = <
 &kp TILDE     &kp F1         &kp F2       &kp F3      &kp F4                &kp F5                 &kp F11                                              &kp F12             &kp F6        &kp F7     &kp F8        &kp F9      &kp F10         &none
-&trans        &kp RA(Q)      &kp RA(Y)    &kp RA(P)   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PRINTSCREEN                                      &kp K_CONTEXT_MENU  &kp AT_SIGN   &kp HOME   &kp INSERT    &kp DELETE  &kp END         &none
+&kp CARET     &kp RA(Q)      &kp RA(Y)    &kp RA(P)   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PRINTSCREEN                                      &kp K_CONTEXT_MENU  &kp AT_SIGN   &kp HOME   &kp INSERT    &kp DELETE  &kp END         &none
 &kp CAPSLOCK  &kp RA(M)      &kp RA(S)    &kp RA(N5)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CAPSLOCK     &trans  &trans      &trans  &trans  &kp PAUSE_BREAK     &kp LEFT      &kp DOWN   &kp UP_ARROW  &kp RIGHT   &kp DOLLAR      &trans
 &trans        &kp AMPERSAND  &kp PERCENT  &kp HASH    &kp LEFT_BRACKET      &kp RIGHT_BRACKET                               &trans      &trans                              &kp ASTERISK  &kp MINUS  &kp PLUS      &kp EQUAL   &kp UNDERSCORE  &trans
 &trans        &trans         &trans       &trans      &trans                                       &trans           &trans  &trans      &trans  &trans  &trans                            &trans     &trans        &trans      &trans          &trans
